@@ -111,6 +111,13 @@
    background:#f4f8ff;
 }
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}	
+	
 </style>
 </head>
 
@@ -172,7 +179,44 @@
 </p>
 <p> <br/> <br/> <br/>
 </p>
-	  
+	
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <img src="image_1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <img src="image_2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+  <img src="image_3.jpg" style="width:100%">
+</div>
+
+</div>	
+	
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+ 
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>	
+
+<p> <br/> <br/> <br/>
+</p>
+	
 <p align="center">
   <iframe width="100%" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1&mute=1">
   </iframe>
