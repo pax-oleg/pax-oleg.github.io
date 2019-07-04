@@ -12,6 +12,36 @@
   margin: auto;
 }
 	
+.sidenav {
+  height: 8%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 2%;
+  left: 0;
+  background-color: #f0f2f5;
+  overflow-x: hidden;
+  padding-top: 25px;
+}
+.sidenav a {
+  padding: 0px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  margin-right: 0px;
+}	
+	
+	
+	
+	
 #ads {
   position: fixed;
   width: 100%;
@@ -34,24 +64,50 @@
 }	
 	
 	
-	
 </style>
 </head>
 
 <body bgcolor="#FFFFFF">
 	
 	
-	
+<!--	
 <p align="center">
  <div id="open_in_app">    
     <p> открыть в приложении </p>    
   </div>
 </p>
-	
+
+-->
 	
 <p> <br/> <br/> <br/>
 </p>
 
+<p align="center">
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Открыть в приложении</a>
+
+</div>
+
+
+<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "280px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</p>
+	
+	
+	
+	
 <p align="center"><img src="boy_icon.png" height="70%" width="70%" alt="profile picture"/>
 	</p>
 	
