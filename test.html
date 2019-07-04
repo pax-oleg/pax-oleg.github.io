@@ -25,18 +25,17 @@
   text-align: center;
 }
 
-    
 body {
   font-family: "Lato", sans-serif;
 }
 
 
 .sidenav {
-  height: 15%;
+  height: 12%;
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 3%;
   left: 0;
   background-color: #e6f3ff;
   overflow-x: hidden;
@@ -45,9 +44,9 @@ body {
 
 
 .sidenav a {
-  padding: 8px 8px 8px 8px;
+  padding: 0px 8px 8px 8px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   display: block;
 
@@ -61,7 +60,6 @@ body {
   font-size: 50px;
   margin-right: 5px;
 }
-
    
     
   </style>
@@ -117,14 +115,16 @@ body {
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Открыть в приложении</a>
-  <a href="#">Поделиться</a>
+  <a href="#">Services</a>
+
 </div>
+
 
 <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
 <script>
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "300px";
 }
 
 function closeNav() {
