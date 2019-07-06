@@ -4,8 +4,6 @@
 <meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=no;">
 
 <style>
-
-
 	
 	
 #ads {
@@ -18,7 +16,6 @@
   line-height: 0.5;
 }
 	
-
 #open_in_app {
   position: fixed;
   width: 100%;
@@ -29,8 +26,22 @@
   line-height: 0.7;
 }	
 	
-	
+.collapsible {
+  background-color: #777;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+}
 
+
+.content {
+  display: none;
+  overflow: hidden;
+}	
 	
 </style>
 	
@@ -43,6 +54,8 @@ window.onload = function(){
 function showText(){
   document.getElementById("open_in_app").style.visibility = "visible";
 }
+	
+	
 </script>	
 	
 	
@@ -55,12 +68,10 @@ function showText(){
 ОТКРЫТЬ В ПРИЛОЖЕНИИ <span style="font-size: 20px;"> &#128242 </span> 
 </p>
 </div>
-
 	
 <div style="text-align: center">
 <p align="center">
-
-<img src="boy_icon.png" height="55%" width="55%" alt="profile picture" style="margin-top: 6%;"/>
+<img src="boy_icon.png" height="50%" width="50%" alt="profile picture" style="margin-top: 6%;"/>
 
 <div style="line-height: 0.5">
 <h2> Даниил </h2>		
@@ -75,8 +86,6 @@ function showText(){
 <h5> <i> "Улучшу привлекательность вашего продукта" </i> </h5>
 </p>
 <br/>
-
-
 -->
 
 <!--
@@ -100,23 +109,26 @@ function showText(){
 <p align="center" style="text-align: center;"> 
 	
 	<a href="tel:+123456789" style="text-decoration:none;">
-			<img src="phn.png" height="15%" width="15%" style="margin: 0 10% 0 0" />
+			<img src="phn.png" height="12%" width="15%" style="margin: 0 10% 0 0" />
 	</a>
 	
 	<a href="mailto:exampletest@mail.com" style="text-decoration:none;">
-			<img src="ml.png" height="15%" width="15%" style="margin: 0 10% 0 0" />
+			<img src="ml.png" height="12%" width="15%" style="margin: 0 10% 0 0" />
 	</a>
 	
 	<a href="https://pax-oleg.github.io/business_owners_web_page.html" style="text-decoration:none;">
-			<img src="glb.png" height="15%" width="15%" />
+			<img src="glb.png" height="12%" width="15%" />
 	</a>
 	
 </p>
 
-<br/>
 
 
-<p align="center" style="text-align: center;"> 
+
+
+<button class="collapsible">Ещё</button>
+<div class="content">
+  <p align="center" style="text-align: center;"> 
 	
 	
 	<a href="#" style="text-decoration:none;">
@@ -180,25 +192,20 @@ function showText(){
 <h2 align="center"> Моё портфолио </h2>
 	
 <div class="slideshow-container">
-
 <div class="mySlides">
   <img src="image_1.jpg" style="width:100%">
 </div>
-
 <div class="mySlides">
   <img src="image_2.jpg" style="width:100%">
 </div>
-
 <div class="mySlides">
   <img src="image_3.jpg" style="width:100%">
 </div>
-
 </div>	
 	
 <script>
 var slideIndex = 0;
 showSlides();
-
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -214,14 +221,11 @@ function showSlides() {
 </script>	
    
 </p>
-
-
 <p align="center">
 <div style="background-color: #42f58d; width: 70%; margin: auto; text-align: center; line-height: 2;">
 	<a href="https://pax-oleg.github.io/products.html" style="text-decoration: none;"> Посмотреть все </a>
 </div>											
 </p>
-
 					      
 <p> <br/> <br/> <br/>
 </p>
@@ -239,7 +243,6 @@ function showSlides() {
 <p align="center">
 		 
 <h2 align="center"> Отзывы </h2>
-
 <div style="border: 2px solid gray;">	
 				     
 <font size="+1"> <i> "Отличный дизайнер !" </font> </i>	
@@ -278,9 +281,7 @@ function showSlides() {
 <!--
 <p align="center"> 
 <h2 align="center"> Адрес студии </h2>		 
-
 <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=burkina%20faso&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.yellowrocketagency.com">YellowRocketAgency</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}</style></div>		  
-
 </p> 
 <p> <br/> <br/> <br/>
 </p>
@@ -292,18 +293,39 @@ function showSlides() {
 <a href="#"> <img src="smartphone.png" width="18%" height="18%"> </a>
 </p>
 </div>
-
 -->
+
 
 <p> <br/> <br/> <br/>
 </p>
+
+
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 
 <p align="center">
  <div id="ads">    
     <p> реклама </p>    
   </div>
 </p>
-	      
-</body>
 
+</body>
 </html>
