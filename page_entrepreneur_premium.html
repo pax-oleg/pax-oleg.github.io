@@ -13,9 +13,8 @@
   bottom: 0;
   background-color: #d4d6cd;
   text-align: center;
-  line-height: 0.5;
+  line-height: 0.7;
 }
-
 	
 #open_in_app {
   position: fixed;
@@ -27,24 +26,31 @@
   line-height: 0.7;
 }	
 	
-	
 .collapsible {
   background-color: #777;
   color: white;
-  padding: 5px;
   width: 100%;
   border: none;
   outline: none;
   font-size: 15px;
   text-align: center;
 }
-
-
+	
+	
+.action_button {
+  background-color: #777;
+  color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+}	
+	
 .content {
   display: none;
   overflow: hidden;
 }	
-	
 	
 </style>
 	
@@ -74,10 +80,10 @@ function showText(){
 	
 <div style="text-align: center">
 <p align="center">
-<img src="boy_icon.png" height="50%" width="50%" alt="profile picture" style="margin-top: 8%;"/>
+<img src="boy_icon.png" height="50%" width="50%" alt="profile picture" style="margin-top: 10%;"/>
 
 <div style="line-height: 0.5">
-<h2> Даниил </h2>		
+<h2> Даниил Дизайнов </h2>		
 <h4> Графический дизайнер </h4>
 </div>	
 	
@@ -129,12 +135,10 @@ function showText(){
 
 
 
-<button class="collapsible">Ещё</button>
+<button class="collapsible" onClick = "this.style.visibility= 'hidden';"> Ещё </button>
 <div class="content">
 	
-<hr>
-	
-  <p align="center" style="text-align: center;"> 
+  <p align="center" style="text-align: center; margin: 0;"> 
 	
 	
 	<a href="#" style="text-decoration:none;">
@@ -145,9 +149,10 @@ function showText(){
 	</a>
 	<a href="#" style="text-decoration:none;">
 			<img src="ytb.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
-	
-	<!--
 	</a>
+	
+	  
+	<!--  
 	<a href="#" style="text-decoration:none;">
 			<img src="messenger.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
 	</a>
@@ -165,8 +170,8 @@ function showText(){
 	</a>
 	<a href="#" style="text-decoration:none;">
 			<img src="whatsapp.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
-
-	-->
+	
+	-->  
 	</a>
 	<a href="#" style="text-decoration:none;">
 			<img src="lnkdn.png" height="10%" width="10%" />
@@ -175,7 +180,7 @@ function showText(){
 
 
 
-<p> <br/> <br/>
+<p> <br/> <br/> 
 </p>
 
 <p align="center">
@@ -188,11 +193,10 @@ function showText(){
 </ul>	
 </p>
 
-<p align="center">
-<div style="background-color: #42f58d; width: 70%; margin: auto; text-align: center; line-height: 2;">
-	<a href="https://pax-oleg.github.io/business_owners_web_page.html" style="text-decoration: none;"> Подробнее </a>
-</div>											
-</p>
+
+<button class="action_button" onClick = "window.location.href = 'https://pax-oleg.github.io/business_owners_web_page.html';"> Подробнее </button>
+										
+
 
 <p> <br/> <br/> 
 </p>
@@ -231,11 +235,7 @@ function showSlides() {
 </script>	
    
 </p>
-<p align="center">
-<div style="background-color: #42f58d; width: 70%; margin: auto; text-align: center; line-height: 2;">
-	<a href="https://pax-oleg.github.io/products.html" style="text-decoration: none;"> Посмотреть все </a>
-</div>											
-</p>
+<button class="action_button" onClick = "window.location.href = 'https://pax-oleg.github.io/products.html';"> Посмотреть всё </button>
 					      
 <p> <br/> <br/> 
 </p>
@@ -316,7 +316,6 @@ function showSlides() {
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
-
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
