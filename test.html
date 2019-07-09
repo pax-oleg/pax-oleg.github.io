@@ -12,33 +12,34 @@ html {
 	
 
 body {
-    animation: mainscreen 3s linear infinite alternate;
-    -webkit-animation: mainscreen 3s linear infinite alternate;
+background: linear-gradient(148deg, #ef8af5, #8af5e0, #948af5);
+
+-webkit-animation: AnimationName 16s ease infinite;
+-moz-animation: AnimationName 16s ease infinite;
+-o-animation: AnimationName 16s ease infinite;
+animation: AnimationName 16s ease infinite;
 }
 
-@-webkit-keyframes mainscreen {
-    0%   {background-color: #00F900} 
-    12.5%  {background-color: #3363FF}
-    25%  {background-color: #993399} 
-    37.5%  {background-color: #FF85E0}
-    50% {background-color: #F9E600} 
-    62.5% {background-color: #FF9900}
-    75% {background-color: #FF1919} 
-    87.5% {background-color: #FDFDFD}
-    100% {background-color: #000000}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
 }
-
-@keyframes mainscreen {
-    0%   {background-color: #00F900} 
-    12.5%  {background-color: #3363FF}
-    25%  {background-color: #993399} 
-    37.5%  {background-color: #FF85E0}
-    50% {background-color: #F9E600} 
-    62.5% {background-color: #FF9900}
-    75% {background-color: #FF1919} 
-    87.5% {background-color: #FDFDFD}
-    100% {background-color: #000000}
-}	
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
 	
 	
 	
