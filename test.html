@@ -7,11 +7,22 @@
 
 <body>
 
-<dialog> <p>This is an HTML dialog! Click the button to close it.</p> <button id="close">Close Dialog</button> </dialog> <button id="show">Show Me the Dialog!</button> 
+<dialog>
+  <p> 
+    This is an HTML dialog! Click the button to close it.
+  </p> 
+    <button id="close"> Close Dialog </button> 
+ </dialog>   
+  <button id="show"> Show Me the Dialog! </button> 
 
 <script>
 var dialog = document.querySelector('dialog'); 
-document.querySelector('#show').onclick = function() { dialog.show(); }; document.querySelector('#close').onclick = function() { dialog.close(); }; 
+document.querySelector('#show').onclick = function() { 
+  dialog.show(); 
+}; 
+document.querySelector('#close').onclick = function() {
+  dialog.close(); 
+}; 
 </script>
 
 
