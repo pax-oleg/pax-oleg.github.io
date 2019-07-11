@@ -29,13 +29,12 @@ html {
   color: #000000; 
   display: block; 
   margin-top: 3%; 
-  line-height: normal;		
 }
 	
 	
 		
 	
-#open_in_app {
+.open_in_app {
   position: fixed;
   width: 100%;
   left: 0;
@@ -43,8 +42,19 @@ html {
   background-color: #d4d6cd;
   text-align: center;
   line-height: 0.7;
+}
+	
+	
+.open_in_app a {
+  text-decoration: none; 
+  color: #000000; 
+  display: block; 
+  margin-top: 3%; 
 }	
 	
+	
+	
+		
 .collapsible {
   background-color: #777;
   color: white;
@@ -92,8 +102,8 @@ function showText(){
 <body>
 	
 <div id="open_in_app" style="visibility: hidden">  	
-<p align="center">   
-ОТКРЫТЬ В ПРИЛОЖЕНИИ <span style="font-size: 20px;"> &#128242 </span> 
+<p align="center"> 
+	<a href="#"> ОТКРЫТЬ В ПРИЛОЖЕНИИ <span style="font-size: 20px;"> &#128242 </span> </a>
 </p>
 </div>
 	
