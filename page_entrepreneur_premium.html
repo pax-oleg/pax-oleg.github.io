@@ -5,6 +5,42 @@
 
 <style>
 	
+html {
+    height: 100%;
+}
+	
+#animation {	
+background: linear-gradient(91deg, #ffffff, #ffffff, #eefbc7, #ffffff, #ffffff, #ccfcff, #ffffff, #ffffff);
+background-size: 1600% 1600%;
+-webkit-animation: AnimationName 14s ease infinite;
+-moz-animation: AnimationName 14s ease infinite;
+-o-animation: AnimationName 14s ease infinite;
+animation: AnimationName 14s ease infinite;
+	}
+	
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 0%}
+    50%{background-position:93% 100%}
+    100%{background-position:0% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 0%}
+    50%{background-position:93% 100%}
+    100%{background-position:0% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 0%}
+    50%{background-position:93% 100%}
+    100%{background-position:0% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 0%}
+    50%{background-position:93% 100%}
+    100%{background-position:0% 0%}
+}
+	
+	
+	
 	
 #ads {
   position: fixed;
@@ -70,7 +106,7 @@ function showText(){
 	
 </head>
 
-<body bgcolor="#FFFFFF">
+<body>
 	
 <div id="open_in_app" style="visibility: hidden">  	
 <p align="center">   
@@ -78,12 +114,14 @@ function showText(){
 </p>
 </div>
 	
+<div id="animation">	
 <div style="text-align: center">
 <p align="center">
 <img src="boy_icon.png" height="50%" width="50%" alt="profile picture" style="margin-top: 10%;"/>
 
-<div style="line-height: 0.5">
-<h2> Даниил Дизайнов </h2>		
+<div style="line-height: 0.7;">
+<h2> Даниил Дизайнов </h2>	
+
 <h4> Графический дизайнер </h4>
 </div>	
 	
@@ -115,7 +153,7 @@ function showText(){
 -->
 
 
-<p align="center" style="text-align: center;"> 
+<p align="center" style="text-align: center; margin-top: 15%;"> 
 	
 	<a href="tel:+123456789" style="text-decoration:none;">
 			<img src="phn.png" height="12%" width="15%" style="margin: 0 10% 0 0" />
@@ -132,10 +170,8 @@ function showText(){
 </p>
 
 
-
-
-
 <button class="collapsible" onClick = "this.style.visibility= 'hidden';"> Ещё </button>
+
 <div class="content">
 	
   <p align="center" style="text-align: center; margin: 0;"> 
@@ -179,7 +215,7 @@ function showText(){
 </p>
 
 
-
+	
 <p> <br/> <br/> 
 </p>
 
@@ -336,5 +372,8 @@ for (i = 0; i < coll.length; i++) {
   </div>
 </p>
 -->
+
+</div> <!--end of animation-->
+
 </body>
 </html>
