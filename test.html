@@ -1,13 +1,151 @@
 <!DOCTYPE html>
-<html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<style>
+	
+html {
+    height: 100%;
+}
+	
+	
+	
+.ads {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  left: 0;
+  bottom: 0;
+  background-color: #d4d6cd;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+	
+.ads a {
+  text-decoration: none; 
+  color: #000000; 
+  display: block; 
+  margin-top: 3%; 
+}
+	
+	
+		
+	
+#open_in_app {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #d4d6cd;
+  text-align: center;
+  line-height: 0.7;
+}
+	
+	
+#open_in_app a {
+  text-decoration: none; 
+  color: #000000; 
+  display: block; 
+  margin-top: 2%; 
+}	
+	
+	
+	
+		
+.collapsible {
+  background-color: #777;
+  color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+}
+	
+	
+.action_button {
+  background-color: #777;
+  color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+}	
+	
+.content {
+  display: none;
+  overflow: hidden;
+}	
+	
+</style>
+	
+<script>
+window.onload = function(){
+  // Change this value to however many seconds you want to delay the text by.
+  var theDelay = 1.5;
+  var timer = setTimeout("showText()",theDelay*1000)
+}
+function showText(){
+  document.getElementById("open_in_app").style.visibility = "visible";
+}
+	
+	
+</script>	
+	
+	
 </head>
 
 <body>
+	
+<div id="open_in_app" style="visibility: hidden">  	
+<p align="center"> 
+	<a href="pax-oleg.github.io/download_application.html"> ОТКРЫТЬ В ПРИЛОЖЕНИИ <span style="font-size: 20px;"> &#128242 </span> <a>
+</p>
+</div>
+	
+<div style="text-align: center">
+<p align="center">
+<img src="boy_icon.png" height="50%" width="50%" alt="profile picture" style="margin-top: 10%;"/>
 
-<dialog>
+<div style="line-height: 0.7;">
+<h2> Даниил Дизайнов </h2>	
+
+<h4> Графический дизайнер </h4>
+</div>	
+	
+</p>
+</div>
+
+<!--
+<p align="center">
+<h5> <i> "Улучшу привлекательность вашего продукта" </i> </h5>
+</p>
+<br/>
+-->
+
+<!--
+<p align="center">
+<a href="https://d1.awsstatic.com/whitepapers/aws-overview.pdf" style="text-decoration:none;">
+	<img src="https://seeklogo.com/images/A/Adobe_PDF-logo-84B633809C-seeklogo.com.png" height="20%" width="20%" style="margin: 0 10% 0 0;" />
+</a>
+<a href="https://d3a8hw3k243rpe.cloudfront.net/static-assets/Download_Brochure.pdf" style="text-decoration:none;">
+	<img src="https://seeklogo.com/images/A/Adobe_PDF-logo-84B633809C-seeklogo.com.png" height="20%" width="20%" style="margin: 0 10% 0 0;" />
+</a>
+</p>
+-->
+
+<!--
+<p align="center">
+<h2 align="center"> Контаты </h2>
+</p>
+-->
+
+
+  <!--
+  <dialog>
   <p> 
     This is an HTML dialog! Click the button to close it.
   </p> 
@@ -15,8 +153,247 @@
  </dialog>  
  
  <button onClick="document.querySelector('dialog').show()"> Show Me the Dialog! </button> 
+  
+-->
+  
+  
+  
+  
+<dialog>
+  
+<p align="center" style="text-align: center; margin-top: 13%;"> 
+	
+	<a href="tel:+123456789" style="text-decoration:none;">
+			<img src="phn.png" height="12%" width="15%" style="margin: 0 10% 0 0" />
+	</a>
+	
+	<a href="mailto:exampletest@mail.com" style="text-decoration:none;">
+			<img src="ml.png" height="12%" width="15%" style="margin: 0 10% 0 0" />
+	</a>
+	
+	<a href="https://pax-oleg.github.io/business_owners_web_page.html" style="text-decoration:none;">
+			<img src="glb.png" height="12%" width="15%" />
+	</a>
+	
+</p>
+ <button onClick="document.querySelector('dialog').close()"> Close Dialog </button> 
+  </dialog>  
+  
+ <button onClick="document.querySelector('dialog').show()"> Show Me the Dialog! </button>   
+  
+  
+  
+  
+
+<button class="collapsible" onClick = "this.style.visibility= 'hidden';"> Ещё </button>
+
+<div class="content">
+	
+  <p align="center" style="text-align: center; margin: 0;"> 
+	
+	
+	<a href="#" style="text-decoration:none;">
+			<img src="facebook.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
+	</a>
+	<a href="#" style="text-decoration:none;">
+			<img src="instagram.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
+	</a>
+	<a href="#" style="text-decoration:none;">
+			<img src="ytb.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
+	</a>
+	
+	  
+	<!--  
+	<a href="#" style="text-decoration:none;">
+			<img src="messenger.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
+	</a>
+	<a href="#" style="text-decoration:none;">
+			<img src="skype.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
+	</a>
+	<a href="#" style="text-decoration:none;">
+			<img src="telegram.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
+	</a>
+	<a href="#" style="text-decoration:none;">
+			<img src="twitter.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
+	</a>
+	<a href="#" style="text-decoration:none;">
+			<img src="vk.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
+	</a>
+	<a href="#" style="text-decoration:none;">
+			<img src="whatsapp.png" height="10%" width="10%" style="margin: 0 10% 0 0"/>
+	
+	-->  
+	</a>
+	<a href="#" style="text-decoration:none;">
+			<img src="lnkdn.png" height="10%" width="10%" />
+	</a>
+</p>
+
+
+	
+<p> <br/> <br/> 
+</p>
+
+<p align="center">
+<h2 align="center"> Сфера услуг </h2> 
+<ul  style="display:table; margin:0 auto;}">
+
+	<li> Сделаю ваш продукт привлекательнее для клиентов </li>
+	<li> Помогу с ребрендингом </li>
+	<li> Создам привлекательную веб страницу </li>
+</ul>	
+</p>
+
+
+<button class="action_button" onClick = "window.location.href = 'https://pax-oleg.github.io/business_owners_web_page.html';"> Подробнее </button>
+										
+
+
+<p> <br/> <br/> 
+</p>
+
+
+<p align="center"">
+<h2 align="center"> Моё портфолио </h2>
+	
+<div class="slideshow-container">
+<div class="mySlides">
+  <img src="image_1.jpg" style="width:100%">
+</div>
+<div class="mySlides">
+  <img src="image_2.jpg" style="width:100%">
+</div>
+<div class="mySlides">
+  <img src="image_3.jpg" style="width:100%">
+</div>
+</div>	
+	
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+ 
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>	
+   
+</p>
+<button class="action_button" onClick = "window.location.href = 'https://pax-oleg.github.io/products.html';"> Посмотреть всё </button>
+					      
+<p> <br/> <br/> 
+</p>
+	
+<p align="center">
+<h2 align="center"> Видео презентация </h2>
+  <iframe width="100%" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1&mute=1">
+  </iframe>
+</p>
+	
+<p> <br/> <br/> 
+</p>
+  
+																	 
+<p align="center">
+		 
+<h2 align="center"> Отзывы </h2>
+<div style="border: 2px solid gray;">	
+				     
+<font size="+1"> <i> "Отличный дизайнер !" </font> </i>	
+<br/> 
+<div style="text-align: right; line-height="0.5;">
+Клиент №1 </br> 2019.01.01 
+</div>
+<br/>		
+<br/>	
+			    
+<font size="+1"> <i> "Отличная работа за разумную цену." </font> </i>	
+<br/>
+<div style="text-align: right; line-height="0.5;">
+Клиент №2 <br/> 2019.01.02 
+</div>
+<br/>
+<br/>	
+	
+<font size="+1"> <i> "После изменения дизайна продажи выросли на 30% ." </font> </i>	
+<br/> 
+<div style="text-align: right; line-height="0.5;">
+Клиент №3 <br/> 2019.01.03 
+</div>
+<br/>
+<br/>
+
+</div>
+</p>																	 
+																	 
+																	 
+
+					      
+<p> <br/> <br/> <br/>
+</p>
+																	 
+<!--
+<p align="center"> 
+<h2 align="center"> Адрес студии </h2>		 
+<div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=burkina%20faso&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.yellowrocketagency.com">YellowRocketAgency</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}</style></div>		  
+</p> 
+<p> <br/> <br/> <br/>
+</p>
+-->
+
+<!-- floating picture of smartphone
+<div id="open_in_app_icon">
+<p align="right">
+<a href="#"> <img src="smartphone.png" width="18%" height="18%"> </a>
+</p>
+</div>
+-->
+
+
+<p> <br/> 
+</p>
+
+
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+<p align="center">
+ <div class="ads">    
+   <a href="pax-oleg.github.io/advertisement.html"> реклама </a>    
+  </div>
+</p>
+
 
 
 
 </body>
 </html>
+
+
+
+
+
